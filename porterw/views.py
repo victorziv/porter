@@ -18,4 +18,7 @@ def connectdb():
 @app.route('/home')
 def index():
     db = connectdb()
-    return "Connected to %r" % db
+    collection = 'jobs'
+    col = pymongo.collection.Collection(db, collection, create=False)
+    jobs = [ job for job in col.find() ]
+    return "Jobs in DB %r" % jobs
