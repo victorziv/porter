@@ -1,5 +1,6 @@
 from flask import render_template
 from porterw import app
+from porterw.forms import LoginForm
 import pymongo
 
 HOST='porter-mongodb'
@@ -25,3 +26,9 @@ def index():
 #    return "Jobs in DB %r" % jobs
     user = { 'nickname' : "Bobo" }
     return render_template('index.html', title='Home', user = user)
+# _______________________________________
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
+    return render_template('login.html', title='Sign In', form=form)
