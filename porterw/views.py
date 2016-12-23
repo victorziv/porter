@@ -1,3 +1,4 @@
+from flask import render_template
 from porterw import app
 import pymongo
 
@@ -20,5 +21,7 @@ def index():
     db = connectdb()
     collection = 'jobs'
     col = pymongo.collection.Collection(db, collection, create=False)
-    jobs = [ job for job in col.find() ]
-    return "Jobs in DB %r" % jobs
+#    jobs = [ job for job in col.find() ]
+#    return "Jobs in DB %r" % jobs
+    user = { 'nickname' : "Bobo" }
+    return render_template('index.html', title='Home', user = user)
