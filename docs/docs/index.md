@@ -8,6 +8,9 @@ For full documentation visit [mkdocs.org](http://mkdocs.org).
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs help` - Print this help message.
+* to learn how to set login with Google OpenID visit 
+
+     [Google Developer Howto](https://developers.google.com/identity/protocols/OpenIDConnect)
 
 ## Project layout
 
