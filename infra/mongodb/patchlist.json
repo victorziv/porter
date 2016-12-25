@@ -1,0 +1,31 @@
+[
+    {
+        "_id": "585f8751ac91d84c1c255777", 
+        "name": "init_collection", 
+        "kwargs": {
+            "collection": "users", 
+            "indexes": [
+                {
+                    "index_key": [
+                        [
+                            "username", 
+                            "ASCENDING"
+                        ]
+                    ], 
+                    "unique": true, 
+                    "name": "username"
+                }, 
+                {
+                    "index_key": [
+                        [
+                            "email", 
+                            "ASCENDING"
+                        ]
+                    ], 
+                    "unique": false, 
+                    "name": "email"
+                }
+            ]
+        }
+    }
+]

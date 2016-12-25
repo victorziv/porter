@@ -1,0 +1,5 @@
+[
+    { "name": "SENT_VIA_MARKETO", "value" :"sent_via_marketo" },
+    { "name": "SENT_VIA_ELOQUA", "value" :"sent_via_eloqua" }
+]
+

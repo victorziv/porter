@@ -1,0 +1,9 @@
+[
+    {
+            "type" : "hotfix",
+            "enabled" : true,
+            "name" : "setup_hotfix-1",
+            "locked" : false
+    }
+
+]

@@ -1,0 +1,28 @@
+[
+    { "name": "CREATED", "value" :"created" },
+    { "name": "STARTED_DISCUSSION", "value" :"started_discussion" },
+    { "name": "COMMENTED", "value" :"commented" },
+    { "name": "LIKED", "value" :"liked" },
+    { "name": "NOTE", "value" :"note" },
+    { "name": "RELEVANT", "value" :"relevant" },
+    { "name": "IRRELEVANT", "value" :"irrelevant" },
+    { "name": "CONNECTED", "value" :"connected" },
+    { "name": "INFO", "value" :"info" },
+    { "name": "PUSHED_TO_SALESFORCE", "value" :"pushed_to_salesforce" },
+    { "name": "MESSAGE_RECEIVED", "value" :"received" },
+    { "name": "MESSAGE_REPLIED", "value" :"replied" },
+    { "name": "MESSAGE_SENT", "value" :"sent" },
+    { "name": "LINKEDIN_CONNECTION_REQUEST", "value" :"linkedin_connection_request" },
+    { "name": "LINKEDIN_CONNECTION_REQUEST_ACCEPTED", "value" :"linkedin_connection_request_accepted" },
+    { "name": "SENT_BY_COLABO", "value" :"sent_by_colabo" },
+    { "name": "DELETED", "value" :"deleted" },
+    { "name": "PROFILE_UPDATED", "value" :"updated_profile" },
+    { "name": "PUSHED_TO_ORACLE", "value" :"pushed_to_oracle" },
+    { "name": "PUSHED_TO_MSDYNAMICS", "value" :"pushed_to_msdynamics" },
+    { "name": "LINKEDIN_NOTIFICATION_VIEWED", "value" :"linkedin_notification_viewed" },
+    { "name": "LINKEDIN_NOTIFICATION_POST", "value" :"linkedin_notification_post" },
+    { "name": "SENT_VIA_MARKETO", "value" :"sent_via_marketo" },
+    { "name": "SENT_VIA_ELOQUA", "value" :"sent_via_eloqua" },
+    { "name": "PROFILE_UPDATE_SIMPLE", "value" :"profile_update_simple" }
+]
+
