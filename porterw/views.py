@@ -1,17 +1,7 @@
 from flask import render_template, flash, redirect
-from porterw import app
+from porterw import app, db
 from porterw.forms import LoginForm
 import pymongo
-
-HOST='porter-mongodb'
-PORT=48084
-DB='porter'
-
-# _______________________________________
-
-def connectdb():
-    client = pymongo.MongoClient(HOST, PORT)
-    return getattr(client, DB)
 
 # _______________________________________
 
@@ -19,12 +9,10 @@ def connectdb():
 @app.route('/index')
 @app.route('/home')
 def index():
-    db = connectdb()
-    collection = 'jobs'
+    collection = 'users'
     col = pymongo.collection.Collection(db, collection, create=False)
-#    jobs = [ job for job in col.find() ]
-#    return "Jobs in DB %r" % jobs
-    user = { 'nickname' : "Bobo" }
+    users = [ user['username'] for user in col.find() ]
+    user = { 'nickname' : "Bobo", 'usernames' : "%r" % users }
     return render_template('index.html', title='Home', user = user)
 # _______________________________________
 
